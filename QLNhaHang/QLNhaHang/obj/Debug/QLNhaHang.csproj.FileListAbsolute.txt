@@ -54,3 +54,4 @@ C:\Users\Star\Documents\GitHub\QuanLyNhaHangTester\QLNhaHang\QLNhaHang\obj\Debug
 C:\Users\Star\Documents\GitHub\QuanLyNhaHangTester\QLNhaHang\QLNhaHang\obj\Debug\QLNhaHang.FrmMain.resources
 C:\Users\Star\Documents\GitHub\QuanLyNhaHangTester\QLNhaHang\QLNhaHang\obj\Debug\QLNhaHang.Views.FormLogIn.resources
 C:\Users\Star\Documents\GitHub\QuanLyNhaHangTester\QLNhaHang\QLNhaHang\obj\Debug\QLNhaHang.Views.FormCreateAcc.resources
+C:\Users\Star\Documents\GitHub\QuanLyNhaHangTester\QLNhaHang\QLNhaHang\obj\Debug\QLNhaHang.Views.ucNhanVien.resources
