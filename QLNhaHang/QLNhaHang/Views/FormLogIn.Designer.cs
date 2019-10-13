@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.txtPass = new DevExpress.XtraEditors.TextEdit();
             this.txtUsers = new DevExpress.XtraEditors.TextEdit();
@@ -40,14 +39,12 @@
             this.btExitF1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsers.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.checkEdit1);
             this.groupControl1.Controls.Add(this.hyperlinkLabelControl1);
             this.groupControl1.Controls.Add(this.txtPass);
             this.groupControl1.Controls.Add(this.txtUsers);
@@ -60,28 +57,21 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông Tin Đăng Nhập";
             // 
-            // checkEdit1
-            // 
-            this.checkEdit1.Location = new System.Drawing.Point(179, 102);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Ghi nhớ mật khẩu";
-            this.checkEdit1.Size = new System.Drawing.Size(112, 19);
-            this.checkEdit1.TabIndex = 3;
-            // 
             // hyperlinkLabelControl1
             // 
             this.hyperlinkLabelControl1.Location = new System.Drawing.Point(191, 133);
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
             this.hyperlinkLabelControl1.Size = new System.Drawing.Size(65, 13);
-            this.hyperlinkLabelControl1.TabIndex = 2;
+            this.hyperlinkLabelControl1.TabIndex = 4;
             this.hyperlinkLabelControl1.Text = "Tạo tài khoản";
+            this.hyperlinkLabelControl1.Click += new System.EventHandler(this.hyperlinkLabelControl1_Click);
             // 
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(179, 76);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(133, 20);
-            this.txtPass.TabIndex = 1;
+            this.txtPass.TabIndex = 2;
             // 
             // txtUsers
             // 
@@ -115,24 +105,27 @@
             this.labelControl1.Location = new System.Drawing.Point(57, 44);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(72, 13);
-            this.labelControl1.TabIndex = 0;
+            this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Tên Tài Khoản:";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // btLoginF1
             // 
+            this.btLoginF1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btLoginF1.Location = new System.Drawing.Point(125, 254);
             this.btLoginF1.Name = "btLoginF1";
             this.btLoginF1.Size = new System.Drawing.Size(75, 23);
             this.btLoginF1.TabIndex = 1;
             this.btLoginF1.Text = "Đăng Nhập";
+            this.btLoginF1.Click += new System.EventHandler(this.btLoginF1_Click);
             // 
             // btExitF1
             // 
+            this.btExitF1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btExitF1.Location = new System.Drawing.Point(293, 254);
             this.btExitF1.Name = "btExitF1";
             this.btExitF1.Size = new System.Drawing.Size(75, 23);
-            this.btExitF1.TabIndex = 1;
+            this.btExitF1.TabIndex = 2;
             this.btExitF1.Text = "Thoát";
             // 
             // FormLogIn
@@ -144,11 +137,12 @@
             this.Controls.Add(this.btLoginF1);
             this.Controls.Add(this.groupControl1);
             this.Name = "FormLogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập Hệ Thống";
+            this.Load += new System.EventHandler(this.FormLogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsers.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -158,14 +152,13 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit txtUsers;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtPass;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton btLoginF1;
         private DevExpress.XtraEditors.SimpleButton btExitF1;
+        public DevExpress.XtraEditors.TextEdit txtUsers;
+        public DevExpress.XtraEditors.TextEdit txtPass;
     }
 }

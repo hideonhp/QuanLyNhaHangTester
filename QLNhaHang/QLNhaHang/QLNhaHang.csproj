@@ -52,7 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\LogInCtrl.cs" />
+    <Compile Include="Models\QuanLyNhanVien.cs" />
     <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\CreateAcc.cs" />
+    <Compile Include="Models\LogInBoiDoi.cs" />
+    <Compile Include="Models\Pass265.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FormChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormChange.Designer.cs">
+      <DependentUpon>FormChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormCreateAcc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +83,6 @@
     </Compile>
     <Compile Include="Views\FormLogIn.Designer.cs">
       <DependentUpon>FormLogIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ucNhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\ucNhanVien.Designer.cs">
-      <DependentUpon>ucNhanVien.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -92,16 +97,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FormChange.resx">
+      <DependentUpon>FormChange.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormCreateAcc.resx">
       <DependentUpon>FormCreateAcc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ucNhanVien.resx">
-      <DependentUpon>ucNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="Properties\DataSources\FrmMain.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Control.LogInCtrl.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Models.Connection.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Models.CreateAcc.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Models.LogInBoiDoi.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Models.Pass265.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Views.FormChange.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Views.FormCreateAcc.datasource" />
+    <None Include="Properties\DataSources\QLNhaHang.Views.FormLogIn.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,7 +130,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

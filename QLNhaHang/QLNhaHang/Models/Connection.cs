@@ -11,7 +11,7 @@ namespace QLNhaHang.Models
 {
     class Connection
     {
-        public static string sqlcon = "server =LL69AV4GE09FLX9; uid= sa; pwd= 123; database = dbSoftQuanLyNhaHang";
+        public static string sqlcon = @"server =DESKTOP-0U3UGEI; uid= sa; pwd= 12345678; database = dbSoftQuanLyNhaHang";
         public static SqlConnection Getconnection()
         {
             SqlConnection con = new SqlConnection(sqlcon);

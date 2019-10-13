@@ -27,5 +27,10 @@ namespace QLNhaHang.Views
         {
 
         }
+
+        private void btLoginF1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QLNhaHang.Views;
 
 namespace QLNhaHang.Views
 {
@@ -19,6 +20,22 @@ namespace QLNhaHang.Views
         }
 
         private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormLogIn_Load(object sender, EventArgs e)
+        {
+            txtPass.Properties.PasswordChar = '*';
+        }
+
+        private void hyperlinkLabelControl1_Click(object sender, EventArgs e)
+        {
+            FormCreateAcc Cre = new FormCreateAcc();
+            Cre.ShowDialog();
+        }
+
+        private void btLoginF1_Click(object sender, EventArgs e)
         {
 
         }
