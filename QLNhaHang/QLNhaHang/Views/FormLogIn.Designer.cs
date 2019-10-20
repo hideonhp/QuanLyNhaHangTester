@@ -72,6 +72,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(133, 20);
             this.txtPass.TabIndex = 2;
+            this.txtPass.EditValueChanged += new System.EventHandler(this.txtPass_EditValueChanged);
             // 
             // txtUsers
             // 

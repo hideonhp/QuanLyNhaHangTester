@@ -39,5 +39,10 @@ namespace QLNhaHang.Views
         {
 
         }
+
+        private void txtPass_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

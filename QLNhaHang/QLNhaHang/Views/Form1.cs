@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Windows;
 using QLNhaHang.Views;
+using System.Data.SqlClient;
 namespace QLNhaHang
 {
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -146,6 +147,21 @@ namespace QLNhaHang
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DataTable asd = new DataTable();    
+            using (SqlConnection sqlConzz = new SqlConnection(connectionString:))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM QuanLyNhanVien", sqlConzz))
+                {
+                    sqlConzz.Open();
+                    SqlDataReader readera = cmd.ExecuteReader();
+                    asd.Load(reader:);
+                }
+            }
+            return asd;
         }
     }
     
