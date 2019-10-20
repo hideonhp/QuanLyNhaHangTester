@@ -41,8 +41,7 @@ namespace QuanLiNhaHang_Ver4
             {
                 fManagers f = new fManagers();
                 this.Hide();
-                f.ShowDialog();
-                this.Show();
+                f.Show();
             }
             else
             {

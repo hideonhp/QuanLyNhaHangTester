@@ -37,7 +37,12 @@
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lvsBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtTotalP = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btSwichTable = new System.Windows.Forms.Button();
             this.numGiamGia = new System.Windows.Forms.NumericUpDown();
@@ -47,7 +52,7 @@
             this.btAdd = new System.Windows.Forms.Button();
             this.numericFood = new System.Windows.Forms.NumericUpDown();
             this.cbFood = new System.Windows.Forms.ComboBox();
-            this.cbCatoga = new System.Windows.Forms.ComboBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -123,15 +128,43 @@
             // 
             // lvsBill
             // 
+            this.lvsBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lvsBill.GridLines = true;
             this.lvsBill.HideSelection = false;
             this.lvsBill.Location = new System.Drawing.Point(3, 3);
             this.lvsBill.Name = "lvsBill";
             this.lvsBill.Size = new System.Drawing.Size(349, 308);
             this.lvsBill.TabIndex = 0;
             this.lvsBill.UseCompatibleStateImageBehavior = false;
+            this.lvsBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên Món";
+            this.columnHeader1.Width = 140;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số Lượng";
+            this.columnHeader2.Width = 62;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            this.columnHeader3.Width = 68;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
+            this.columnHeader4.Width = 90;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txtTotalP);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.btSwichTable);
             this.panel3.Controls.Add(this.numGiamGia);
@@ -141,6 +174,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(355, 56);
             this.panel3.TabIndex = 1;
+            // 
+            // txtTotalP
+            // 
+            this.txtTotalP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTotalP.Location = new System.Drawing.Point(175, 18);
+            this.txtTotalP.Name = "txtTotalP";
+            this.txtTotalP.ReadOnly = true;
+            this.txtTotalP.Size = new System.Drawing.Size(87, 21);
+            this.txtTotalP.TabIndex = 7;
+            this.txtTotalP.Text = "0";
+            this.txtTotalP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // comboBox1
             // 
@@ -161,15 +205,15 @@
             // 
             // numGiamGia
             // 
-            this.numGiamGia.Location = new System.Drawing.Point(181, 31);
+            this.numGiamGia.Location = new System.Drawing.Point(87, 31);
             this.numGiamGia.Name = "numGiamGia";
-            this.numGiamGia.Size = new System.Drawing.Size(77, 20);
+            this.numGiamGia.Size = new System.Drawing.Size(82, 20);
             this.numGiamGia.TabIndex = 5;
             this.numGiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 3);
+            this.button1.Location = new System.Drawing.Point(87, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 22);
             this.button1.TabIndex = 4;
@@ -190,7 +234,7 @@
             this.btGiamGia.Controls.Add(this.btAdd);
             this.btGiamGia.Controls.Add(this.numericFood);
             this.btGiamGia.Controls.Add(this.cbFood);
-            this.btGiamGia.Controls.Add(this.cbCatoga);
+            this.btGiamGia.Controls.Add(this.cbCategory);
             this.btGiamGia.Location = new System.Drawing.Point(479, 27);
             this.btGiamGia.Name = "btGiamGia";
             this.btGiamGia.Size = new System.Drawing.Size(355, 59);
@@ -204,6 +248,7 @@
             this.btAdd.TabIndex = 1;
             this.btAdd.Text = "Thêm Món Ăn";
             this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // numericFood
             // 
@@ -230,16 +275,15 @@
             this.cbFood.Name = "cbFood";
             this.cbFood.Size = new System.Drawing.Size(170, 21);
             this.cbFood.TabIndex = 0;
-            this.cbFood.SelectedIndexChanged += new System.EventHandler(this.cbCatoga_SelectedIndexChanged);
             // 
-            // cbCatoga
+            // cbCategory
             // 
-            this.cbCatoga.FormattingEnabled = true;
-            this.cbCatoga.Location = new System.Drawing.Point(4, 4);
-            this.cbCatoga.Name = "cbCatoga";
-            this.cbCatoga.Size = new System.Drawing.Size(170, 21);
-            this.cbCatoga.TabIndex = 0;
-            this.cbCatoga.SelectedIndexChanged += new System.EventHandler(this.cbCatoga_SelectedIndexChanged);
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(4, 4);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(170, 21);
+            this.cbCategory.TabIndex = 0;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCatoga_SelectedIndexChanged);
             // 
             // fManagers
             // 
@@ -264,6 +308,7 @@
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGiamGia)).EndInit();
             this.btGiamGia.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericFood)).EndInit();
@@ -284,7 +329,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ListView lvsBill;
         private System.Windows.Forms.Panel btGiamGia;
-        private System.Windows.Forms.ComboBox cbCatoga;
+        private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.NumericUpDown numericFood;
         private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.ComboBox cbFood;
@@ -294,5 +339,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btSwichTable;
         private System.Windows.Forms.NumericUpDown numGiamGia;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.TextBox txtTotalP;
     }
 }

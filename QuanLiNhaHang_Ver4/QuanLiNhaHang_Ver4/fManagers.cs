@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLiNhaHang_Ver4.DTO;
 using QuanLiNhaHang_Ver4.DAO;
+using System.Globalization;
 
 namespace QuanLiNhaHang_Ver4
 {
@@ -18,8 +19,21 @@ namespace QuanLiNhaHang_Ver4
         {
             InitializeComponent();
             LoadTable();
+            LoadCategory();
         }
         #region Method
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            cbCategory.DataSource = listCategory;
+            cbCategory.DisplayMember = "Name";
+        }
+        void LoadFoodListByID(int id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
+            cbFood.DataSource = listFood;
+            cbFood.DisplayMember = "Name";
+        }
         void LoadTable()
         {
             List<Table> tableList = TableDAO.Instance.LoadTableList();
@@ -27,6 +41,9 @@ namespace QuanLiNhaHang_Ver4
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
                 btn.Text = item.Name + Environment.NewLine + item.Status ;
+                btn.Click += Btn_Click;
+                btn.Tag = item;
+
                 switch (item.Status)
                 {
                     case "Trống":
@@ -39,9 +56,35 @@ namespace QuanLiNhaHang_Ver4
                 flpTable.Controls.Add(btn);
             }
         }
+        void ShowBill(int id)
+        {
+
+            lvsBill.Items.Clear();
+            List<QuanLiNhaHang_Ver4.DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTable(id);
+            float totalPrice = 0;
+            foreach (QuanLiNhaHang_Ver4.DTO.Menu item in listBillInfo)
+            {
+
+                ListViewItem lsvItem = new ListViewItem(item.FoodName.ToString());
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvItem.SubItems.Add(item.Price.ToString());
+                lsvItem.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
+                lvsBill.Items.Add(lsvItem);
+            }
+            CultureInfo culture = new CultureInfo("vi-VN");
+            txtTotalP.Text = totalPrice.ToString("c",culture);
+        }
+
         #endregion
 
         #region Events
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            int tableID = ((sender as Button).Tag as Table).ID;
+            lvsBill.Tag = (sender as Button).Tag;
+            ShowBill(tableID);
+        }
 
         private void fManagers_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -55,6 +98,13 @@ namespace QuanLiNhaHang_Ver4
 
         private void cbCatoga_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int id = 0;
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+                return;
+            Category selected = cb.SelectedItem as Category;
+            id = selected.ID;
+            LoadFoodListByID(id);
 
         }
 
@@ -80,5 +130,26 @@ namespace QuanLiNhaHang_Ver4
 
         }
         #endregion
+
+        private void btAdd_Click(object sender, EventArgs e)
+        {
+            Table table = lvsBill.Tag as Table;
+
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            int foodID = (cbFood.SelectedItem as Food).ID;
+            int count = (int)numericFood.Value;
+
+            if (idBill == -1)
+            {
+                BillDAO.Instance.InsertBill(table.ID);
+                BillInfoDAO.Instance.InsertBillInfo(BillDAO.Instance.GetMaxIDBill(), foodID, count);
+            }
+            else
+            {
+                BillInfoDAO.Instance.InsertBillInfo(idBill, foodID, count);
+            }
+
+            ShowBill(table.ID);
+        }
     }
 }

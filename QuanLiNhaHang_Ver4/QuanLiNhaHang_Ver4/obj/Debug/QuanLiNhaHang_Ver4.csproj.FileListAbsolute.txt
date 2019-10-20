@@ -10,3 +10,15 @@ C:\Users\Nani\source\repos\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanL
 C:\Users\Nani\source\repos\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.pdb
 C:\Users\Nani\source\repos\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fAccProfile.resources
 C:\Users\Nani\source\repos\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fAdmin.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\bin\Debug\QuanLiNhaHang_Ver4.exe.config
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\bin\Debug\QuanLiNhaHang_Ver4.exe
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\bin\Debug\QuanLiNhaHang_Ver4.pdb
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.csprojAssemblyReference.cache
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fAccProfile.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fAdmin.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fLogin.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.fManagers.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.Properties.Resources.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.csproj.GenerateResource.cache
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.exe
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\QuanLiNhaHang_Ver4\QuanLiNhaHang_Ver4\obj\Debug\QuanLiNhaHang_Ver4.pdb
