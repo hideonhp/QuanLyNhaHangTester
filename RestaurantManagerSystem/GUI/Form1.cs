@@ -699,9 +699,9 @@ namespace RestaurantManagerSystem
                     }
                     catch
                     {
-                        MessageBoxEx.Show("Kiểu dữ liệu số khách không đúng!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbSoKhach.Text = "";
-                        tbSoKhach.Focus();
+                    //    MessageBoxEx.Show("Kiểu dữ liệu số khách không đúng!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //    tbSoKhach.Text = "";
+                    //    tbSoKhach.Focus();
                     }
                 }
                 else
@@ -1693,5 +1693,14 @@ namespace RestaurantManagerSystem
             }
         }
 
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX58_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

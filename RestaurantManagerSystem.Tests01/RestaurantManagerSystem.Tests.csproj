@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1062963D-9F48-4FAC-A12C-6C2255224340}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestaurantManagerSystem.Tests</RootNamespace>
+    <AssemblyName>RestaurantManagerSystem.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Pex.Framework, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantManagerSystem\RestaurantManagerSystem.csproj">
+      <Project>{C1F12C72-1C0C-430E-B3CB-77007DF93195}</Project>
+      <Name>RestaurantManagerSystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanDTOTest.Constructor.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.Constructor01.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.Constructor02.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.cs" />
+    <Compile Include="BanDTOTest.MaBanGet.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.MaBanSet.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.SoGheGet.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanDTOTest.SoGheSet.g.cs">
+      <DependentUpon>BanDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.Constructor.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.Constructor01.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.Constructor02.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.cs" />
+    <Compile Include="CT_HoaDonDTOTest.DonGiaGet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.DonGiaSet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.MaTDGet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.MaTDSet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.SoHDGet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.SoHDSet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.SoLuongGet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HoaDonDTOTest.SoLuongSet.g.cs">
+      <DependentUpon>CT_HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.Constructor.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.Constructor01.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.Constructor02.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.cs" />
+    <Compile Include="GiaDTOTest.GiaGet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.GiaSet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.MaTDGet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.MaTDSet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.NgayADGiaGet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaDTOTest.NgayADGiaSet.g.cs">
+      <DependentUpon>GiaDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.Constructor.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.Constructor01.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.Constructor02.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.cs" />
+    <Compile Include="HoaDonDTOTest.MsBanGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.MsBanSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.MsNVLapGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.MsNVLapSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.MsNVTTGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.MsNVTTSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.SoHDGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.SoHDSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.SoKhachGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.SoKhachSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.TimeLapHDGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.TimeLapHDSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.TongTienGet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonDTOTest.TongTienSet.g.cs">
+      <DependentUpon>HoaDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.Constructor.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.Constructor01.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.Constructor02.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.cs" />
+    <Compile Include="LoaiThucDonDTOTest.MaLoaiGet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.MaLoaiSet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.NhomGet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.NhomSet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.TenLoaiGet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiThucDonDTOTest.TenLoaiSet.g.cs">
+      <DependentUpon>LoaiThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienBUSTest.CapNhatNhanVien.g.cs">
+      <DependentUpon>NhanVienBUSTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienBUSTest.cs" />
+    <Compile Include="NhanVienDTOTest.Constructor.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.Constructor01.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.Constructor02.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.cs" />
+    <Compile Include="NhanVienDTOTest.HoTenGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.HoTenSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.MaNVGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.MaNVSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.MatKhauGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.MatKhauSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.NgaySinhGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.NgaySinhSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.QuyenGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.QuyenSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.TenDNGet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienDTOTest.TenDNSet.g.cs">
+      <DependentUpon>NhanVienDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.CaGet.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.CaSet.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.Constructor.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.Constructor01.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.Constructor02.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.cs" />
+    <Compile Include="PhanCongDTOTest.MsBanGet.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanCongDTOTest.MsBanSet.g.cs">
+      <DependentUpon>PhanCongDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PexAssemblyInfo.cs" />
+    <Compile Include="ThucDonDTOTest.Constructor.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.Constructor01.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.Constructor02.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.cs" />
+    <Compile Include="ThucDonDTOTest.DonViTinhGet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.DonViTinhSet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.MaLoaiGet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.MaLoaiSet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.MaTDGet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.MaTDSet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.TenTDGet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonDTOTest.TenTDSet.g.cs">
+      <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

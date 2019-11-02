@@ -1,0 +1,8 @@
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.GUI.frmDangNhap.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.frmMain.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.GUI.ViewHoaDon.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.GUI.ViewThongKeTheoKhoangNgay.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.GUI.ViewThongKeTheoNgay.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.GUI.ViewThongKeTheoThangNam.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.Properties.Resources.resources
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\RestaurantManagerSystem\Debug\RestaurantManagerSystem.csproj.GenerateResource.cache
