@@ -22,5 +22,15 @@ namespace RestaurantManagerSystem.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0U3UGEI;Initial Catalog=ResManager;Integrated Security=True")]
+        public string ResManagerConnectionString {
+            get {
+                return ((string)(this["ResManagerConnectionString"]));
+            }
+        }
     }
 }

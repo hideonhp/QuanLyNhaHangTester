@@ -321,6 +321,7 @@
     <Compile Include="ThucDonDTOTest.TenTDSet.g.cs">
       <DependentUpon>ThucDonDTOTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1Test.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">

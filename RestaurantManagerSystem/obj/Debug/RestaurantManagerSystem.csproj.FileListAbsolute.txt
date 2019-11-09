@@ -31,3 +31,6 @@ C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\D
 C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\Debug\stdole.dll
 C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\obj\Debug\RestaurantManagerSystem.csproj.CopyComplete
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\RestaurantManagerSystem\bin\Debug\RestaurantManagerSystem.exe.config

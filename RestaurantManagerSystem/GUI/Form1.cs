@@ -1702,5 +1702,35 @@ namespace RestaurantManagerSystem
         {
 
         }
+
+        private void labelX51_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX59_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbDVT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControlPanel9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
