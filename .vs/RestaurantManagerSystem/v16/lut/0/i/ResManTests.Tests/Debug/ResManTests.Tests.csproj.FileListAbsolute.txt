@@ -1,4 +1,0 @@
-C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\b\ResManTests.Tests\bin\Debug\ResManTests.Tests.dll
-C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\ResManTests.Tests\Debug\ResManTests.Tests.csprojAssemblyReference.cache
-C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\ResManTests.Tests\Debug\ResManTests.Tests.csproj.CopyComplete
-C:\Users\Nani\Documents\GitHub\QuanLyNhaHangTester\.vs\RestaurantManagerSystem\v16\lut\0\i\ResManTests.Tests\Debug\ResManTests.Tests.dll
